@@ -1,7 +1,7 @@
 # LoFi-Fokus
 A Bash script for the KDE widget, [Fokus](https://store.kde.org/p/1308861), to listen to youtube Lo-Fi while working. it does this by playing a YouTube video. It uses the yt-dlp program to download the video's audio and play it in mplayer.
 
-## Why?
+### Why?
 As someone with ADHD, I struggle with focus during work sessions. I discovered "Fokus", a pomodoro timer widget, which has been a helpful tool to manage my work sessions and breaks. However, I still find it difficult to concentrate, i know that music helps me too so i decided to combine both.
 
 To help with this, I decided to make this script to be able to play random LoFi videos during my breaks when in "focus" mode. I find that background noise, such as music or white noise, can help me concentrate and filter out distractions. LoFi videos, in particular, are known for their relaxing and calming background music, which creates a peaceful and focused environment.
