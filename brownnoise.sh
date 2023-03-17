@@ -3,8 +3,8 @@
 rm /home/gemmstone/clones/pomodor/stop
 # Set default values for urls.txt and duration.txt if they do not exist
 if [[ ! -f /home/gemmstone/clones/pomodor/urls.txt ]]; then
-    echo "https://www.youtube.com/watch?v=dQw4w9WgXcQ" > urls.txt
-    echo "https://www.youtube.com/watch?v=dQw4w9WgXcQ" >> urls.txt
+    echo "https://www.youtube.com/watch?v=lTRiuFIWV54" > urls.txt
+    echo "https://www.youtube.com/watch?v=_ITiwPMUzho" >> urls.txt
 fi
 
 if [[ ! -f /home/gemmstone/clones/pomodor/duration.txt ]]; then
