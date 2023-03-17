@@ -28,6 +28,7 @@ git clone https://github.com/Gemmstone/LoFi-Fokus.git
 
 ### Configuration
 * Edit the contents of **[duration.txt](duration.txt)** file to the focus time you prefer (25min by default), remember to also set up the same focus time in **Fokus**
+
 * **OPTIONAL:** Add the YouTube urls you want into **[urls.txt](urls.txt)**, they have to be the same or longer than the time you've chosen before, there's a couple of urls by default, one of the urls will be chosen at random every run.
 
 ### Add permisions
@@ -40,6 +41,7 @@ sudo chmod +x stop.sh
 * Add the file **[run.sh](run.sh)** to Fokus in 
   * Start focus
   * End Break
+  
 * Add the file **[stop.sh](stop.sh)** to Fokus in
   * Start Break
   * End focus
@@ -48,6 +50,7 @@ sudo chmod +x stop.sh
 ### Usage
 * Just start your pomodoro timer with Fokus and it should start playing! 
   * _It might take some time to run the first time while it downloads the mp3 files!_
+  
 * It'll stop once the time is over and your break has started.
 
 ## Contributing
