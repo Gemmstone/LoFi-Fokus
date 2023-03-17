@@ -10,7 +10,7 @@ A Bash script for the KDE widget, [Fokus](https://store.kde.org/p/1308861), to l
 > This helps me to relax while I work, and ultimately supports my productivity and mental health. By integrating this script with the Fokus widget, I have created a streamlined and effective workflow that (I hope) works for me.
  
 
-> **DISCLAIMER:** While the my script, LoFi videos and pomodoro timers may be helpful tools for some individuals with ADHD, it is important to note that ADHD is a complex disorder and requires a multifaceted treatment approach. None of these should not be considered a substitute for medical advice or therapy.
+> **DISCLAIMER:** While my script, LoFi videos and pomodoro timers may be helpful tools for some individuals with ADHD, it is important to note that ADHD is a complex disorder and requires a multifaceted treatment approach. None of these should not be considered a substitute for medical advice or therapy.
 
 
 ### Dependencies
