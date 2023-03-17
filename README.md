@@ -11,7 +11,7 @@ This helps me to relax while I work, and ultimately supports my productivity and
 > **DISCLAIMER:** While my script, LoFi videos and pomodoro timers may be helpful tools for some individuals with ADHD, it is important to note that ADHD is a complex disorder and requires a multifaceted treatment approach. None of these should be considered a substitute for medical advice or therapy.
 
 ## Installation
-### Installl Dependencies
+### Install Dependencies
 ##### Debian/Ubuntu
 ```bash
 sudo apt-get install yt-dlp notify-send mplayer
