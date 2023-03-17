@@ -1,5 +1,4 @@
 # LoFi-Fokus
-------
 A Bash script for the KDE widget, [Fokus](https://store.kde.org/p/1308861), to listen to youtube Lo-Fi while working. it does this by playing a YouTube video. It uses the yt-dlp program to download the video's audio and play it in mplayer.
 
 ## Why?
@@ -12,7 +11,6 @@ This helps me to relax while I work, and ultimately supports my productivity and
 > **DISCLAIMER:** While my script, LoFi videos and pomodoro timers may be helpful tools for some individuals with ADHD, it is important to note that ADHD is a complex disorder and requires a multifaceted treatment approach. None of these should be considered a substitute for medical advice or therapy.
 
 ## Installation
-------
 ### Installl Dependencies
 ##### Debian/Ubuntu
 ```bash
@@ -53,9 +51,7 @@ sudo chmod +x stop.sh
 * It'll stop once the time is over and your break has started.
 
 ## Contributing
-------
 Contributions are welcome! If you find a bug or have a feature request, please open an issue on the GitHub repository. If you want to contribute code, please fork the repository, create a branch for your changes, and submit a pull request. 
 
 ## License
-------
 The LoFi-Fokus Script is released under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
