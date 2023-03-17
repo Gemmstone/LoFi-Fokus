@@ -1,18 +1,19 @@
 #!/bin/bash
+SCRIPT_DIR=$(dirname "$0")
 
-rm /home/gemmstone/clones/pomodor/stop
+rm $SCRIPT_DIR/stop
 # Set default values for urls.txt and duration.txt if they do not exist
-if [[ ! -f /home/gemmstone/clones/pomodor/urls.txt ]]; then
-    echo "https://www.youtube.com/watch?v=lTRiuFIWV54" > urls.txt
-    echo "https://www.youtube.com/watch?v=_ITiwPMUzho" >> urls.txt
+if [[ ! -f $SCRIPT_DIR/urls.txt ]]; then
+    echo "https://www.youtube.com/watch?v=dQw4w9WgXcQ" > urls.txt
+    echo "https://www.youtube.com/watch?v=dQw4w9WgXcQ" >> urls.txt
 fi
 
-if [[ ! -f /home/gemmstone/clones/pomodor/duration.txt ]]; then
-    echo "25" > /home/gemmstone/clones/pomodor/duration.txt
+if [[ ! -f $SCRIPT_DIR/duration.txt ]]; then
+    echo "25" > $SCRIPT_DIR/duration.txt
 fi
 
 # Read a list of YouTube livestream URLs from a file
-urls=($(cat urls.txt))
+urls=($(cat $SCRIPT_DIR/urls.txt))
 
 # Download each video if it hasn't already been downloaded
 for url in "${urls[@]}"; do
@@ -20,17 +21,17 @@ for url in "${urls[@]}"; do
     video_id=$(yt-dlp --get-id "$url")
 
     # Check if the audio has already been downloaded
-    if [[ ! -f "$video_id.m4a" ]]; then
+    if [[ ! -f "$SCRIPT_DIR/$video_id.m4a" ]]; then
         # Download the audio stream only in m4a format
-        yt-dlp -f m4a -o "$video_id.m4a" "$url"
+        yt-dlp -f m4a -o "$SCRIPT_DIR/$video_id.m4a" "$url"
     fi
 done
 
 # Get the duration to play the audio stream, in minutes
-duration=$(cat /home/gemmstone/clones/pomodor/duration.txt)
+duration=$(cat $SCRIPT_DIR/duration.txt)
 
 # Select a random video to play
-audio_files=(/home/gemmstone/clones/pomodor/*.m4a)
+audio_files=($SCRIPT_DIR/*.m4a)
 if [[ "${#audio_files[@]}" -eq 0 ]]; then
     echo "No audio files found"
     exit 1
@@ -56,7 +57,7 @@ stop_file="$(dirname "$0")/stop"
 # Wait for the duration or for a stop signal
 for ((i = 0; i < $duration * 60; i++)); do
     if [[ -f "$stop_file" ]]; then
-        rm /home/gemmstone/clones/pomodor/stop
+        rm $SCRIPT_DIR/stop
         break
     fi
     sleep 1
